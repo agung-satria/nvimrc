@@ -12,13 +12,15 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jiangmiao/auto-pairs' " Auto pairs
 
 " Color
-Plug 'KabbAmine/vCoolor.vim'
-Plug 'norcalli/nvim-colorizer.lua'
+Plug 'KabbAmine/vCoolor.vim' "Color picker
+Plug 'norcalli/nvim-colorizer.lua' "Color highlight
+" Colorscheme
+Plug 'navarasu/onedark.nvim'
+Plug 'bluz71/vim-moonfly-colors'
 
 Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua' " Nvim Tree
 Plug 'akinsho/bufferline.nvim' " Bufferline
-Plug 'bluz71/vim-moonfly-colors' "Colorscheme
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lualine/lualine.nvim' "Status line
 
@@ -30,5 +32,6 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'akinsho/toggleterm.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()

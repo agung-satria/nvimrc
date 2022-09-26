@@ -188,7 +188,7 @@ noremap <leader>sv :split<CR>
 nnoremap <leader>tr :%s//g<Left><Left>
 nnoremap <leader>tl :s//g<Left><Left>
 
-" Copy full path
+" Copy full path (in current buffer)
 nnoremap <leader>y :let @+ = expand("%:p")<CR>
 
 " no highlight search
@@ -198,13 +198,7 @@ noremap <leader>l :set hlsearch<CR>
 " Abbreviations
 abbr emaila agungsatria890@gmail.com
 
-" Copy path, directory, name
-" absolute path (/something/src/foo.txt)
-" nnoremap <leader>cf :let @*=expand("%:p")
-" filename (foo.txt)
-" nnoremap <leader>cn :let @*=expand("%:t")<CR>
-" directory name (/something/src)
-" nnoremap <leader>cd :let @*=expand("%:p:h")<CR>
+nnoremap <leader>pv :Ex<CR>
+
 "_________________________ my config _______________________________
 
-nnoremap <leader>pv :Ex<CR>
