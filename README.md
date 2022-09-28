@@ -72,6 +72,8 @@ Map leader = Space
 | leader-w     | Write (save)                              |
 | leader-q     | Quit                                      |
 | leader-sp    | Git signs preview hunk toggle             |
+| leader-sl    | Git signs next hunk                       |
+| leader-sh    | Git signs prev hunk                       |
 | leader-sv    | split                                     |
 | leader-vs    | vsplit                                    |
 | leader-tr    | Type and replace (global) 'old/new'       |

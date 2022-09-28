@@ -69,5 +69,5 @@ function _PYTHON_TOGGLE()
   python:toggle()
 end
 
-vim.api.nvim_set_keymap("n", "<C-t>", ":ToggleTerm size=12 direction=horizontal<cr>", { noremap = true })
-vim.api.nvim_set_keymap("i", "<C-t>", ":ToggleTerm size=12 direction=horizontal<cr>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<C-t>", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", { noremap = true })
+vim.api.nvim_set_keymap("i", "<C-t>", "<esc><cmd>ToggleTerm size=10 direction=horizontal<cr>", { noremap = true })

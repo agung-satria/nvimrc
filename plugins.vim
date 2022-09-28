@@ -10,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'prettier/vim-prettier'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jiangmiao/auto-pairs' " Auto pairs
+Plug 'dense-analysis/ale'
 
 " Color
 Plug 'KabbAmine/vCoolor.vim' "Color picker

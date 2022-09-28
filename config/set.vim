@@ -31,12 +31,23 @@ set scrolloff=3
 set conceallevel=0
 set cursorline
 set termguicolors
-syntax on
 set nocompatible
+syntax on
 
 let mapleader = " "
 inoremap jk <esc>l
 inoremap kj <esc>
+
+" Disable key
+noremap J <Nop>
+nmap <C-z> <Nop>
+imap <C-z> <Nop>
+
+" Move normally between wrapped lines
+" nmap j gj
+" nmap k gk
+" vmap j gj
+" vmap k gk
 
 " for quick quick
 " noremap <leader>d dd
@@ -44,10 +55,6 @@ inoremap kj <esc>
 " noremap <leader>H _i
 " noremap <leader>l $
 " noremap <leader>L $a
-
-" switching tabs by ctrl+rightLeft arrow
-" nnoremap <C-Left> :bprevious<CR>
-" nnoremap <C-Right> :bnext<CR>
 
 " toggle last buffers
 nnoremap <leader><TAB> <C-6>
@@ -66,10 +73,16 @@ xnoremap K :move '<-2<CR>gv-gv
 xnoremap p '"_dP'
 
 " Resize with arrows
-nnoremap <C-Up> :resize -2<CR>
-nnoremap <C-Down> :resize +2<CR>
-nnoremap <C-Left> :vertical resize -2<CR>
-nnoremap <C-Right> :vertical resize +2<CR>
+nnoremap <C-Up> <cmd>resize -2<CR>
+nnoremap <C-Down> <cmd>resize +2<CR>
+nnoremap <C-Left> <cmd>vertical resize -2<CR>
+nnoremap <C-Right> <cmd>vertical resize +2<CR>
+
+" Disable arrow movement; resize splits instead.
+" nnoremap <Up> :resize +2<CR>
+" nnoremap <Down> :resize -2<CR>
+" nnoremap <Left> :vertical resize +2<CR>
+" nnoremap <Right> :vertical resize -2<CR>
 
 " Visual Block --
 " Move text up and down
@@ -77,7 +90,6 @@ nnoremap <C-Right> :vertical resize +2<CR>
 " keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 " keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 " keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
 
 " Go to tab by number
 noremap <leader>1 1gt
@@ -94,38 +106,15 @@ noremap <leader>9 9gt
 nnoremap - <C-x>
 nnoremap = <C-a>
 
-" To resize windows horizontal split:
-" nnoremap <silent> <c-i> <C-W><
-" nnoremap <silent> <c-o> <C-W>>
-
-" Move focus split with ctrl+shift+{h
+" Move focus split with ctrl+{hjkl}
 nnoremap <silent> <c-k> <C-W>k
 nnoremap <silent> <c-j> <C-W>j
 nnoremap <silent> <c-h> <C-W>h
 nnoremap <silent> <c-l> <C-W>l
 
-" Move focus split with leader+{h
-" nnoremap <leader>k <C-W>k
-" nnoremap <leader>j <C-W>j
-" nnoremap <leader>h <C-W>h
-" nnoremap <leader>l <C-W>l
-
-" Half page Up/Down with Shift+{j,k}
-" nmap <silent> J <C-d>
-" nmap <silent> K <C-u>
-
-" Page Up/Down with Shift+{j,k}
+" Page Up/Down with Alt+{j,k}
 nmap <silent> <A-j> <C-F>
 nmap <silent> <A-k> <C-B>
-
-" Select html element to close tag
-" nmap <leader>vv V %
-" Select html element to close tag and yank it,
-" but if the tag only has 1 char (a, p, etc)
-" do the remap on the first opening bracket
-" (instead of on the iddle of the tag char
-" make sure the html Prettier
-" nmap <leader>vy V % y l %
 
 " Remove whitespaces
 nnoremap <leader>rw :%s/\s\{1,}/new/g <left><left><left>
@@ -143,12 +132,12 @@ nnoremap <leader>sq :$put =range(0,10)<left><left><left><left>
 nnoremap <leader>rl :%s/.\{1}$// <left><left><left><left><left>
 
 " Save (use with prettier and save instead/ see prettier config bellow)
-nnoremap <leader>w :w <CR> 
+nnoremap <leader>w :w <CR>h 
 nnoremap <leader>q :q <CR> 
 
 " Quick save
-inoremap <F10> <ESC> :w <CR>
-nnoremap <F10> <ESC> :w <CR>
+inoremap <F10> <ESC>:w<CR>l
+nnoremap <F10> :w<CR>
 
 " reload nvim
 nnoremap <leader>r :so ~/.config/nvim/init.vim<CR>
@@ -175,8 +164,8 @@ map <F11> :call ToggleWrap()<CR>
 map! <F11> ^[:call ToggleWrap()<CR>
 
 " Select all
-" nnoremap <C-a> ggVG
-" inoremap <C-a> <ESC> ggVG
+nnoremap <C-a> ggVG
+inoremap <C-a> <ESC>ggVG
 
 " Split
 noremap <leader>vs :vsplit<CR>
