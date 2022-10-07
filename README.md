@@ -2,13 +2,15 @@
 
 # Requirement
 
-- sudo apt-install [nodejs](https://nodejs.org/) npm yad ripgrep fzf silversearcher-ag
+- sudo apt-install zenity ripgrep fzf silversearcher-ag
 - sudo pacman -S [nodejs](https://nodejs.org/) npm yad ripgrep fzf the_silver_searcher
 - sudo npm install -g live-server prettier
 - pip install pynvim --upgrade
 - [neovim](https://github.com/neovim/neovim.git) >= 0.7.0
-- another npm or pip package, can be found in installing language server instruction below
 - [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better)
+- Download node binary, cp to /usr/local/, add to path; ex: ```export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH```
+
+  
 
 # VimPlug
 
@@ -19,33 +21,6 @@ for NeoVim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-
-# Language server
-
-- More: [Coc Language server](https://github.com/neoclide/coc.nvim/wiki/Language-servers)
-- Other than those listed below already installed
-
-# 1. Install language server (Bash)
-
-```sh
-sudo npm i -g bash-language-server
-CocInstall coc-sh
-```
-
-# 2. Install language server (Python) - Still not working (read the docs!)
-
-```sh
-sudo npm install -g jedi
-pip install jedi-language-server
-CocInstall coc-jedi
-```
-
-# 2.1. Python error? (jedi case only)
-
-- Error: `[coc.nvim]: /bin/sh: 1: /home/agung/.config/coc/extensions/node_modules/ coc-jedi/.venv/bin/jedi-language-server: not found`
-- `pip install -U jedi-language-server`
-- `which jedi-language-server`
-- Move it to the error message want
 
 # Color Picker (VCoolor):
 

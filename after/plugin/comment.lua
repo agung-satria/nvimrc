@@ -21,6 +21,6 @@ comment.setup {
   end,
 }
 
+vim.cmd [[imap <C-_> <esc>gcc]]
 vim.cmd [[nmap <C-_> gcc]]
 vim.cmd [[xmap <C-_> gc]]
-
