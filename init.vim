@@ -5,4 +5,5 @@ source ~/.config/nvim/config/emmet.vim
 source ~/.config/nvim/config/set.vim
 source ~/.config/nvim/config/php.vim
 source ~/.config/nvim/config/multiple-cursor.vim
+source ~/.config/nvim/config/undotree.vim
 lua require('agung-satria')

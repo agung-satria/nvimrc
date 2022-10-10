@@ -3,16 +3,19 @@ call plug#begin('~/.nvim-autoload/plugged')
 " Coc completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Dev
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
-Plug 'prettier/vim-prettier'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jiangmiao/auto-pairs' " Auto pairs
 Plug 'dense-analysis/ale'
+Plug 'prettier/vim-prettier'
+Plug 'zeekay/vim-beautify'
+Plug 'mbbill/undotree'
 
-" PHP
+" PHP Dev
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'marlonfan/coc-phpls'
 

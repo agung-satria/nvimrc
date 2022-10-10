@@ -4,10 +4,10 @@
 
 - sudo pacman -S [nodejs](https://nodejs.org/) npm neovim zenity ripgrep the_silver_searcher
 - sudo apt-get install zenity ripgrep silversearcher-ag
-- sudo npm install -g live-server prettier
+- npm install -g live-server js-beautify prettier
 - pip install pynvim --upgrade
 - [neovim](https://github.com/neovim/neovim.git) >= 0.7.0 (or download the binary and put in your $PATH)
-- [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better) or download the binary, cp to /usr/local/, add to path; ex: `export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH`)
+- [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better) or download the binary, cp to /usr/local/, add to path; ex: `export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH`
 - [Coc extension](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions) to read. (already installed in vimplug/plugins.vim)
 
 # VimPlug
@@ -75,6 +75,7 @@ Map leader = Space
 | JK           | Move line up and down (in visual mode)    |
 | -,=          | increase, decrease number                 |
 | F3, F4       | set number, set relativenumber (toggle)   |
+| F5           | Toggle undotree                           |
 | F10          | Write (save)                              |
 | F11          | Toggle wraping text                       |
 | jk or kj (i) | Escape from insert mode (in insert mode)  |

@@ -131,7 +131,7 @@ nnoremap <leader>sq :$put =range(0,10)<left><left><left><left>
 " Remove some last chacacter
 nnoremap <leader>rl :%s/.\{1}$// <left><left><left><left><left>
 
-" Save (use with prettier and save instead/ see prettier config bellow)
+" Quick save
 nnoremap <leader>w :w <CR>h 
 nnoremap <leader>q :q <CR> 
 
