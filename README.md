@@ -2,27 +2,39 @@
 
 # Requirement
 
-- sudo apt-install zenity ripgrep fzf silversearcher-ag
-- sudo pacman -S [nodejs](https://nodejs.org/) npm yad ripgrep fzf the_silver_searcher
+- sudo pacman -S [nodejs](https://nodejs.org/) npm neovim zenity ripgrep the_silver_searcher
+- sudo apt-get install zenity ripgrep silversearcher-ag
 - sudo npm install -g live-server prettier
 - pip install pynvim --upgrade
-- [neovim](https://github.com/neovim/neovim.git) >= 0.7.0
-- [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better)
-- Download node binary, cp to /usr/local/, add to path; ex: ```export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH```
-
-  
+- [neovim](https://github.com/neovim/neovim.git) >= 0.7.0 (or download the binary and put in your $PATH)
+- [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better) or download the binary, cp to /usr/local/, add to path; ex: `export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH`)
+- [Coc extension](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions) to read. (already installed in vimplug/plugins.vim)
 
 # VimPlug
 
 Install [VimPlug](https://github.com/junegunn/vim-plug). <br />
-for NeoVim
+
+for NeoVim (Linux)
 
 ```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
+for NeoVim (PowerShell)
+
+```sh
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
+```
+
+### Note for PowerShell in Windows
+
+Change the 'source*' line in init.vim file from `source ~/.config/nvim/*.vim`to`source ~/AppData/Local/nvim/config/\*.vim`.
+
 # Keybindings
+
+## My keybindings:
 
 Map leader = Space
 
@@ -40,8 +52,8 @@ Map leader = Space
 | leader-w     | Write (save)                              |
 | leader-q     | Quit                                      |
 | leader-sp    | Git signs preview hunk toggle             |
-| leader-sl    | Git signs next hunk                       |
-| leader-sh    | Git signs prev hunk                       |
+| leader-sj    | Git signs next hunk                       |
+| leader-sk    | Git signs prev hunk                       |
 | leader-sv    | split                                     |
 | leader-vs    | vsplit                                    |
 | leader-tr    | Type and replace (global) 'old/new'       |
@@ -68,20 +80,22 @@ Map leader = Space
 | jk or kj (i) | Escape from insert mode (in insert mode)  |
 | ---------    | --------------------                      |
 
-# Color Picker (VCoolor) Keybindings:
+## Color Picker (VCoolor) keybindings:
 
 - `<Alt-H>` you can insert a hrx color anywhere (NORMAL and INSERT modes).
 - `<Alt-R>` you can insert a rgb color anywhere (NORMAL and INSERT modes).
 - `<Alt-V>` you can insert a hsl color anywhere (NORMAL and INSERT modes).
 - `<Alt-W>` you can insert a rgba color anywhere (NORMAL and INSERT modes).
 
-## Multiple Cursor Keybindings
+## Multiple Cursor keybindings
+
 ### normal mode / visual mode
-  * start:          `<C-n>` start multicursor and add a _virtual cursor + selection_ on the match
-    * next:         `<C-n>` add a new _virtual cursor + selection_ on the next match
-    * skip:         `<C-x>` skip the next match
-    * prev:         `<C-p>` remove current _virtual cursor + selection_ and go back on previous match
-  * select all:     `<A-n>` start multicursor and directly select all matches
+
+- start: `<C-n>` start multicursor and add a _virtual cursor + selection_ on the match
+  - next: `<C-n>` add a new _virtual cursor + selection_ on the next match
+  - skip: `<C-x>` skip the next match
+  - prev: `<C-p>` remove current _virtual cursor + selection_ and go back on previous match
+- select all: `<A-n>` start multicursor and directly select all matches
 
 You can now change the _virtual cursors + selection_ with **visual mode** commands.
 For instance: `c`, `s`, `I`, `A` work without any issues.
@@ -92,11 +106,13 @@ At any time, you can press `<Esc>` to exit back to regular Vim.
 **NOTE**: start with `g<C-n>` to match without boundaries (behaves like `g*` instead of `*`)
 
 ### visual mode when multiple lines are selected
-  * start: `<C-n>` add _virtual cursors_ on each line
+
+- start: `<C-n>` add _virtual cursors_ on each line
 
 You can now change the _virtual cursors_ with **normal mode** commands.
 For instance: `ciw`.
 
 ### command
+
 The command `MultipleCursorsFind` accepts a range and a pattern (regexp), it creates a _visual cursor_ at the end of each match.
 If no range is passed in, then it defaults to the entire buffer.
