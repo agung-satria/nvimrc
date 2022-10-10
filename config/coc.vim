@@ -163,5 +163,8 @@ let g:coc_global_extensions = [
       \ 'coc-json',
       \ 'coc-html-css-support',
       \ 'coc-phpls',
+      \ '@yaegassy/coc-intelephense',
       \ ]
 
+" FOR PHP!
+" :CocInstall @yaegassy/coc-intelephense

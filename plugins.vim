@@ -12,6 +12,10 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jiangmiao/auto-pairs' " Auto pairs
 Plug 'dense-analysis/ale'
 
+" PHP
+Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
+Plug 'marlonfan/coc-phpls'
+
 " Color
 Plug 'KabbAmine/vCoolor.vim' "Color picker
 Plug 'norcalli/nvim-colorizer.lua' "Color highlight
