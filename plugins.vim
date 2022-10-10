@@ -38,5 +38,6 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'akinsho/toggleterm.nvim'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
