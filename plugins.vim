@@ -8,6 +8,7 @@ Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jiangmiao/auto-pairs' " Auto pairs
 Plug 'dense-analysis/ale'

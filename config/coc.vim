@@ -164,7 +164,11 @@ let g:coc_global_extensions = [
       \ 'coc-html-css-support',
       \ 'coc-phpls',
       \ '@yaegassy/coc-intelephense',
+      \ 'coc-pyright',
+      \ 'coc-word',
+      \ 'coc-sh',
       \ ]
 
 " FOR PHP!
 " :CocInstall @yaegassy/coc-intelephense
+" coc-pyright coc-word is for Python

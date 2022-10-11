@@ -4,8 +4,11 @@
 
 - sudo pacman -S [nodejs](https://nodejs.org/) npm neovim zenity ripgrep the_silver_searcher
 - sudo apt-get install zenity ripgrep silversearcher-ag
-- npm install -g live-server js-beautify prettier
+- npm install -g live-server js-beautify prettier yarn
+- npm install -g bash-language-server (optoinal, but recommended)
+- pip install python-language-server
 - pip install pynvim --upgrade
+- make sure python is on $PATH (not python3) I did sudo cp python3 python in /usr/bin
 - [neovim](https://github.com/neovim/neovim.git) >= 0.7.0 (or download the binary and put in your $PATH)
 - [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better) or download the binary, cp to /usr/local/, add to path; ex: `export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH`
 - [Coc extension](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions) to read. (already installed in vimplug/plugins.vim)
