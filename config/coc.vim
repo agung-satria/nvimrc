@@ -163,12 +163,13 @@ let g:coc_global_extensions = [
       \ 'coc-json',
       \ 'coc-html-css-support',
       \ 'coc-phpls',
+      \ '@yaegassy/coc-tailwindcss3',
       \ '@yaegassy/coc-intelephense',
       \ 'coc-pyright',
       \ 'coc-word',
       \ 'coc-sh',
       \ ]
 
-" FOR PHP!
-" :CocInstall @yaegassy/coc-intelephense
-" coc-pyright coc-word is for Python
+" :CocInstall coc-pyright coc-word is for Python
+" :CocInstall @yaegassy/coc-intelephense for PHP
+" :CocInstall @yaegassy/coc-tailwindcss3 for Tailwind CSS

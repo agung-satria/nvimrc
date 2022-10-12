@@ -1,4 +1,4 @@
-<!-- ![](images/nvim-tailwindcss-new.png) -->
+![](images/nvim-tailwindcss-new.png)
 
 # Requirement
 

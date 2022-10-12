@@ -1,47 +1,49 @@
 call plug#begin('~/.nvim-autoload/plugged')
 
-" Coc completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Dev
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive' " git wrapper
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'jiangmiao/auto-pairs' " Auto pairs
+Plug 'jiangmiao/auto-pairs'
 Plug 'dense-analysis/ale'
-Plug 'prettier/vim-prettier'
-Plug 'zeekay/vim-beautify'
-Plug 'mbbill/undotree'
 
 " PHP Dev
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'marlonfan/coc-phpls'
 
+" Tailwind CSS Dev
+Plug 'yaegassy/coc-tailwindcss3' " Intelligent Tailwind CSS tooling for coc.nvim
+Plug 'brenoprata10/nvim-highlight-colors' " Tailwind CSS color highlight
+
 " Color
-Plug 'KabbAmine/vCoolor.vim' "Color picker
-Plug 'norcalli/nvim-colorizer.lua' "Color highlight
+Plug 'KabbAmine/vCoolor.vim' " Color picker
+Plug 'norcalli/nvim-colorizer.lua' " Color highlight
 " Colorscheme
 Plug 'navarasu/onedark.nvim'
 Plug 'bluz71/vim-moonfly-colors'
 
-Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua' " Nvim Tree
+Plug 'kyazdani42/nvim-web-devicons' " File icons
 Plug 'akinsho/bufferline.nvim' " Bufferline
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-lualine/lualine.nvim' "Status line
+Plug 'nvim-lualine/lualine.nvim' " Status line
+Plug 'lukas-reineke/indent-blankline.nvim' " Indentation line guide
 
 Plug 'numToStr/Comment.nvim' " Easily comment stuff
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-lua/plenary.nvim' "Required for Telescope and treesitter
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " Better file finder
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} "Better syntax highlight
 
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'akinsho/toggleterm.nvim'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'tpope/vim-fugitive' " git wrapper
+Plug 'prettier/vim-prettier'
+Plug 'zeekay/vim-beautify'
+Plug 'akinsho/toggleterm.nvim'
+Plug 'mbbill/undotree'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
