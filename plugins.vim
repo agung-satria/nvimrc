@@ -20,6 +20,7 @@ Plug 'brenoprata10/nvim-highlight-colors' " Tailwind CSS color highlight
 " Color
 Plug 'KabbAmine/vCoolor.vim' " Color picker
 Plug 'norcalli/nvim-colorizer.lua' " Color highlight
+Plug 'kien/rainbow_parentheses.vim'
 " Colorscheme
 Plug 'navarasu/onedark.nvim'
 Plug 'bluz71/vim-moonfly-colors'
