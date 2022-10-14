@@ -1,4 +1,5 @@
 nnoremap <F5> :UndotreeToggle<CR>
+
 if has("persistent_undo")
    let target_path = expand('~/.undodir')
 

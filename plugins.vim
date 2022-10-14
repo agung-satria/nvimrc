@@ -30,6 +30,7 @@ Plug 'kyazdani42/nvim-web-devicons' " File icons
 Plug 'akinsho/bufferline.nvim' " Bufferline
 Plug 'nvim-lualine/lualine.nvim' " Status line
 Plug 'lukas-reineke/indent-blankline.nvim' " Indentation line guide
+Plug 'metakirby5/codi.vim'
 
 Plug 'numToStr/Comment.nvim' " Easily comment stuff
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'

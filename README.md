@@ -35,6 +35,26 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 Change the 'source*' line in init.vim file from `source ~/.config/nvim/*.vim`to`source ~/AppData/Local/nvim/config/\*.vim`.
 
+# Codi (Interactive scratchpad for js, python)
+
+### A nice way to use Codi is through a shell wrapper that you can stick in your `~/.zshrc` or `~/.bashrc`:
+
+```sh
+# Codi
+# Usage: codi [filetype] [filename]
+codi() {
+  local syntax="${1:-python}"
+  shift
+  vim -c \
+    "let g:startify_disable_at_vimenter = 1 |\
+    set bt=nofile ls=0 noru nonu nornu |\
+    hi ColorColumn ctermbg=NONE |\
+    hi VertSplit ctermbg=NONE |\
+    hi NonText ctermfg=0 |\
+    Codi $syntax" "$@"
+}
+```
+
 # Keybindings
 
 ## My keybindings:
@@ -54,6 +74,7 @@ Map leader = Space
 | leader-l     | hlsearch                                  |
 | leader-w     | Write (save)                              |
 | leader-q     | Quit                                      |
+| leader-c     | Close current buffers                     |
 | leader-sp    | Git signs preview hunk toggle             |
 | leader-sj    | Git signs next hunk                       |
 | leader-sk    | Git signs prev hunk                       |
@@ -68,10 +89,13 @@ Map leader = Space
 | leader-eq    | Like changing file type extension         |
 | shift-h      | Previous buffers                          |
 | shift-l      | Next buffers                              |
-| space-c      | Close current buffers                     |
 | Ctr-hjkl     | Move focuse split                         |
 | Ctr-t        | Toggle Terminal                           |
 | Ctr-/        | Toggle Comment                            |
+| Ctr-g        | Codi                                      |
+| Alt-g        | Codi! (Deactivate Codi)                   |
+| Ctr-w        | Gvdiffsplit                               |
+| Ctr-q        | Gdiffsplit                                |
 | Ctr-<arrow>  | Resize split                              |
 | Alt-j,k      | Page down, page up                        |
 | Alt-j,k (v)  | Move line up and down (in visual mode)    |
