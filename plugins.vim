@@ -23,7 +23,9 @@ Plug 'norcalli/nvim-colorizer.lua' " Color highlight
 Plug 'kien/rainbow_parentheses.vim'
 " Colorscheme
 Plug 'navarasu/onedark.nvim'
+Plug 'ellisonleao/gruvbox.nvim'
 Plug 'bluz71/vim-moonfly-colors'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
 Plug 'kyazdani42/nvim-tree.lua' " Nvim Tree
 Plug 'kyazdani42/nvim-web-devicons' " File icons
