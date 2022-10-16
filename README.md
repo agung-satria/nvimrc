@@ -63,6 +63,7 @@ Map leader = Space
 
 | Key          | Descriptions                              |
 | ------------ | ----------------------------------------- |
+| fFtT         | Use this to navigate (fF == ;,)           |
 | leader-n     | Toggle NVIM Tree                          |
 | leader-m     | Find file NVIM Tree                       |
 | leader-f     | Telescope find_files                      |

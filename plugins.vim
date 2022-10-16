@@ -26,6 +26,7 @@ Plug 'navarasu/onedark.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+Plug 'bluz71/vim-nightfly-guicolors'
 
 Plug 'kyazdani42/nvim-tree.lua' " Nvim Tree
 Plug 'kyazdani42/nvim-web-devicons' " File icons
@@ -37,7 +38,7 @@ Plug 'karb94/neoscroll.nvim'
 
 Plug 'numToStr/Comment.nvim' " Easily comment stuff
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
-
+Plug 'rhysd/clever-f.vim' "Use fFtT to navigate
 Plug 'nvim-lua/plenary.nvim' "Required for Telescope and treesitter
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " Better file finder
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} "Better syntax highlight

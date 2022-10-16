@@ -1,5 +1,6 @@
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/config/ale.vim
+source ~/.config/nvim/config/clever-f.vim
 source ~/.config/nvim/config/coc.vim
 source ~/.config/nvim/config/codi.vim
 source ~/.config/nvim/config/emmet.vim
