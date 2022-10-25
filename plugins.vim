@@ -14,7 +14,7 @@ Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'marlonfan/coc-phpls'
 
 " Javascript
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript' "Mostly for concealing characters
 
 " Tailwind CSS Dev
 Plug 'yaegassy/coc-tailwindcss3' " Intelligent Tailwind CSS tooling for coc.nvim
@@ -26,8 +26,11 @@ Plug 'norcalli/nvim-colorizer.lua' " Color highlight
 Plug 'kien/rainbow_parentheses.vim'
 " Colorscheme
 Plug 'navarasu/onedark.nvim'
-Plug 'ellisonleao/gruvbox.nvim'
-Plug 'bluz71/vim-moonfly-colors'
+Plug 'sainnhe/gruvbox-material'
+Plug 'sainnhe/everforest'
+Plug 'sainnhe/edge'
+Plug 'sainnhe/sonokai'
+Plug 'lunarvim/onedarker.nvim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'bluz71/vim-nightfly-guicolors'
 

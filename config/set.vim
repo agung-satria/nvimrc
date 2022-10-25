@@ -31,6 +31,7 @@ set scrolloff=3
 set conceallevel=0
 set cursorline
 set termguicolors
+set background=dark
 set t_Co=256 "tailwindcss color highlight
 set nocompatible
 syntax on
