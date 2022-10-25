@@ -6,6 +6,7 @@ source ~/.config/nvim/config/coc.vim
 source ~/.config/nvim/config/codi.vim
 source ~/.config/nvim/config/emmet.vim
 source ~/.config/nvim/config/fugitive.vim
+source ~/.config/nvim/config/vim-javascript.vim
 source ~/.config/nvim/config/php.vim
 source ~/.config/nvim/config/rainbow-parentheses.vim
 source ~/.config/nvim/config/multiple-cursor.vim

@@ -13,6 +13,9 @@ Plug 'dense-analysis/ale'
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'marlonfan/coc-phpls'
 
+" Javascript
+Plug 'pangloss/vim-javascript'
+
 " Tailwind CSS Dev
 Plug 'yaegassy/coc-tailwindcss3' " Intelligent Tailwind CSS tooling for coc.nvim
 Plug 'brenoprata10/nvim-highlight-colors' " Tailwind CSS color highlight
