@@ -39,6 +39,10 @@ let mapleader = " "
 inoremap jk <esc>l
 inoremap kj <esc>
 
+" Navigate in wrapped line
+nmap j gj
+nmap k gk
+
 " Disable key
 noremap J <Nop>
 nmap <C-z> <Nop>

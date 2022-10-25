@@ -43,6 +43,10 @@ Plug 'nvim-lua/plenary.nvim' "Required for Telescope and treesitter
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' } " Better file finder
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} "Better syntax highlight
 
+Plug 'easymotion/vim-easymotion'
+Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-easymotion.vim'
+
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'prettier/vim-prettier'
