@@ -168,6 +168,7 @@ let g:coc_global_extensions = [
       \ 'coc-pyright',
       \ 'coc-word',
       \ 'coc-sh',
+      \ 'coc-diagnostic',
       \ ]
 
 " :CocInstall coc-pyright coc-word is for Python

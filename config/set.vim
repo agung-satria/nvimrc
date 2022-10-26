@@ -195,5 +195,10 @@ abbr emaila agungsatria890@gmail.com
 
 nnoremap <leader>pv :Ex<CR>
 
+" Autocomand to remember last editing position
+augroup vimrc-remember-cursor-position
+  autocmd!
+  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+augroup END
 "_________________________ my config _______________________________
 
