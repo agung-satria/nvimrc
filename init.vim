@@ -4,6 +4,7 @@ source ~/.config/nvim/config/ale.vim
 source ~/.config/nvim/config/clever-f.vim
 source ~/.config/nvim/config/coc.vim
 source ~/.config/nvim/config/codi.vim
+source ~/.config/nvim/config/color.vim
 source ~/.config/nvim/config/emmet.vim
 source ~/.config/nvim/config/fugitive.vim
 source ~/.config/nvim/config/vim-javascript.vim

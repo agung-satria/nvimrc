@@ -25,14 +25,7 @@ Plug 'KabbAmine/vCoolor.vim' " Color picker
 Plug 'norcalli/nvim-colorizer.lua' " Color highlight
 Plug 'kien/rainbow_parentheses.vim'
 " Colorscheme
-Plug 'navarasu/onedark.nvim'
-Plug 'sainnhe/gruvbox-material'
-Plug 'sainnhe/everforest'
-Plug 'sainnhe/edge'
-Plug 'sainnhe/sonokai'
-Plug 'lunarvim/onedarker.nvim'
-Plug 'catppuccin/nvim', {'as': 'catppuccin'}
-Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'EdenEast/nightfox.nvim'
 
 Plug 'kyazdani42/nvim-tree.lua' " Nvim Tree
 Plug 'kyazdani42/nvim-web-devicons' " File icons
