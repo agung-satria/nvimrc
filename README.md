@@ -2,16 +2,16 @@
 
 # Requirement
 
--   sudo pacman -S [nodejs](https://nodejs.org/) npm neovim zenity ripgrep the_silver_searcher
--   sudo apt-get install zenity ripgrep silversearcher-ag
--   npm install -g live-server js-beautify prettier yarn
--   npm install -g bash-language-server (optoinal, but recommended)
--   pip install python-language-server
--   pip install pynvim --upgrade
--   make sure python is on $PATH (not python3) I did sudo cp python3 python in /usr/bin
--   [neovim](https://github.com/neovim/neovim.git) >= 0.8.0 (or download the binary and put in your $PATH)
--   [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better) or download the binary, cp to /usr/local/, add to path; ex: `export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH`
--   [Coc extension](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions) to read. (already installed in vimplug/plugins.vim)
+- sudo pacman -S [nodejs](https://nodejs.org/) npm neovim zenity ripgrep the_silver_searcher
+- sudo apt-get install zenity ripgrep silversearcher-ag
+- npm install -g live-server js-beautify prettier yarn
+- npm install -g bash-language-server (optoinal, but recommended)
+- pip install python-language-server
+- pip install pynvim --upgrade
+- make sure python is on $PATH (not python3) I did sudo cp python3 python in /usr/bin
+- [neovim](https://github.com/neovim/neovim.git) >= 0.8.0 (or download the binary and put in your $PATH)
+- [nodejs](https://nodejs.org/) >= 14.14 (>= 17.xx is better) or download the binary, cp to /usr/local/, add to path; ex: `export PATH=/usr/local/node-v18.10.0-linux-x64/bin:$PATH`
+- [Coc extension](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions) to read. (already installed in vimplug/plugins.vim)
 
 # VimPlug
 
@@ -61,91 +61,98 @@ codi() {
 
 Map leader = Space
 
-| Key          | Descriptions                                         |
-| ------------ | ---------------------------------------------------- |
-|              | **_General_**                                        |
-| Leader-n     | Toggle NVIM Tree                                     |
-| Leader-m     | Find file NVIM Tree                                  |
-| Leader-sv    | split                                                |
-| Leader-vs    | vsplit                                               |
-| Leader-p     | Prettier                                             |
-| Leader-h     | nohl                                                 |
-| Leader-l     | hlsearch                                             |
-| Leader-w     | Write (save)                                         |
-| Leader-q     | Quit                                                 |
-| Leader-c     | Close current buffers                                |
-| Leader-y     | Copy full path in current buffer                     |
-| Ctr-/        | Toggle Comment                                       |
-| Ctr-t        | Toggle Terminal                                      |
-| Ctr-<arrow>  | Resize split                                         |
-|              | **_Navigation_**                                     |
-| Alt-j,k      | Page down, page up                                   |
-| Shift-h      | Previous buffers                                     |
-| Shift-l      | Next buffers                                         |
-| Ctr-hjkl     | Move focuse split                                    |
-| Alt-j,k (v)  | Move line up and down (in visual mode)               |
-| JK           | Move line up and down (in visual mode)               |
-|              | **_Coc_**                                            |
-| Ctrl-space   | Trigger completion                                   |
-| Ctrl-<j,k>   | Pum visible next, prev                               |
-| K            | Show documentation                                   |
-| gd           | Go to definition                                     |
-| gi           | Coc implementation                                   |
-| gy           | Type definition                                      |
-| gr           | Coc references                                       |
-| Leader-rn    | Rename function (C-<o,i> => back, !back)             |
-|              | _More about coc, read docs_                          |
-|              | **_Vim javascript_**                                 |
-| Leader-xl    | Toggle concealing characters                         |
-|              | **_Telescope_**                                      |
-| leader-f     | Telescope find_files                                 |
-| leader-g     | Telescope live_grep                                  |
-| leader-o     | Telescope buffers                                    |
-| C-{x,v,t}    | Telescope open result (hor,ver,tab)                  |
-| C-{u,d}      | Scroll preview result (up, down)                     |
-|              | **_Git Signs_**                                      |
-| Leader-sp    | Git signs preview hunk toggle                        |
-| Leader-sj    | Git signs next hunk                                  |
-| Leader-sk    | Git signs prev hunk                                  |
-|              | **_Easy Motion_**                                    |
-| Leader-j     | Target key line down                                 |
-| Leader-k     | Target key line up                                   |
-| Leader-zl    | Target key all lines                                 |
-| Leader-a     | Target key all words                                 |
-| Leader-zf    | Search for 1 characters                              |
-| Zs           | Search for 2 characters                              |
-| Z/           | Search with easy motion                              |
-|              | **_Color Picker (VCoolor)_**                         |
-| Alt-h        | Pick HEX color                                       |
-| Alt-r        | Pick RGB color                                       |
-| Alt-v        | Pick HSL color                                       |
-| Alt-w        | Pick RGBA color                                      |
-|              | **_Multiple Cursor_**                                |
-| Ctr-n        | Add a new virtual cursor+selection on the next match |
-| Ctr-x        | Skip the next match                                  |
-| Ctr-p        | Remove current virtual cursor+selection and go back  |
-| Alt-n        | Start multicursor and directly select all            |
-|              | **_Agstr_**                                          |
-| Leader-tr    | Type and replace (global) 'old/new'                  |
-| Leader-tl    | Type and replace (current line) 'old/new'            |
-| Leader-rl    | Remove some last chacacter                           |
-| Leader-rw    | Remove whitespaces                                   |
-| Leader-sq    | Put sequance number                                  |
-| Leader-ez    | Like changing file type extension                    |
-| Leader-eq    | Like changing file type extension                    |
-|              | **_Fugitive_**                                       |
-| Ctr-w        | Gvdiffsplit                                          |
-| Ctr-q        | Gdiffsplit                                           |
-|              | **_Misc_**                                           |
-| fFtT         | Use this to navigate (fF == ;,)                      |
-| Ctr-g        | Codi                                                 |
-| Alt-g        | Codi! (Deactivate Codi)                              |
-| =,-          | increase, decrease number                            |
-| F3, F4       | set number, set relativenumber (toggle)              |
-| F5           | Toggle undotree                                      |
-| F10          | Write (save)                                         |
-| F11          | Toggle wraping text                                  |
-| jk or kj (i) | Escape from insert mode (in insert mode)             |
-| ---------    | --------------------                                 |
+| Key              | Descriptions                                         |
+| ---------------- | ---------------------------------------------------- |
+|                  | **_General_**                                        |
+| Leader-n         | Toggle NVIM Tree                                     |
+| Leader-m         | Find file NVIM Tree                                  |
+| Leader-sv        | split                                                |
+| Leader-vs        | vsplit                                               |
+| Leader-p         | Prettier                                             |
+| Leader-h         | nohl                                                 |
+| Leader-l         | hlsearch                                             |
+| Leader-w         | Write (save)                                         |
+| Leader-q         | Quit                                                 |
+| Leader-c         | Close current buffers                                |
+| Leader-y         | Copy full path in current buffer                     |
+| Leader-/         | Toggle Comment                                       |
+| Ctrl-/           | Toggle Comment                                       |
+| Ctrl-\           | Toggle Floating Terminal                             |
+| Ctrl-t           | Toggle Terminal                                      |
+| Ctrl-<arrow>     | Resize split                                         |
+|                  | **_Navigation_**                                     |
+| Alt-j,k          | Page down, page up                                   |
+| Shift-h          | Previous buffers                                     |
+| Shift-l          | Next buffers                                         |
+| Ctrl-hjkl        | Move focuse split                                    |
+| Alt-j,k (v)      | Move line up and down (in visual mode)               |
+| JK               | Move line up and down (in visual mode)               |
+|                  | **_Coc_**                                            |
+| Ctrl-space       | Trigger completion                                   |
+| Ctrl-<j,k>       | Pum visible next, prev                               |
+| K                | Show documentation                                   |
+| Ctrl-{f,b}       | Scroll documentation result {forward, backward}      |
+| gd               | Go to definition                                     |
+| gi               | Coc implementation                                   |
+| gy               | Type definition                                      |
+| gr               | Coc references                                       |
+| Leader-rn        | Rename function (C-<o,i> => back, !back)             |
+|                  | _More about coc, read docs_                          |
+|                  | **_Vim javascript_**                                 |
+| Leader-xl        | Toggle concealing characters                         |
+|                  | **_Telescope_**                                      |
+| Leader-f         | Telescope find_files                                 |
+| Leader-g         | Telescope live_grep                                  |
+| Leader-o         | Telescope buffers                                    |
+| C-{x,v,t}        | Telescope open result (hor,ver,tab)                  |
+| C-{u,d}          | Scroll preview result (up, down)                     |
+|                  | **_Git Signs_**                                      |
+| Leader-sp        | Git signs preview hunk toggle                        |
+| Leader-sj        | Git signs next hunk                                  |
+| Leader-sk        | Git signs prev hunk                                  |
+|                  | **_Easy Motion_**                                    |
+| Leader-a         | Target key all words                                 |
+| Leader-j         | Target key line down                                 |
+| Leader-k         | Target key line up                                   |
+| Leader-zl        | Target key all lines                                 |
+| Leader-zf        | Search for 1 characters                              |
+| zs               | Search for 2 characters                              |
+| z/               | Search with easy motion                              |
+|                  | **_Color Picker (VCoolor)_**                         |
+| Alt-h            | Pick HEX color                                       |
+| Alt-r            | Pick RGB color                                       |
+| Alt-v            | Pick HSL color                                       |
+| Alt-w            | Pick RGBA color                                      |
+|                  | **_Color_**                                          |
+| Leader-ee        | Colorizer toggle                                     |
+| Leader-es        | Colorscheme show (quick check)                       |
+| Leader-{e1...e7} | Switch Nightfox colorscheme look                     |
+|                  | **_Multiple Cursor_**                                |
+| Ctrl-n           | Add a new virtual cursor+selection on the next match |
+| Ctrl-x           | Skip the next match                                  |
+| Ctrl-p           | Remove current virtual cursor+selection and go back  |
+| Alt-n            | Start multicursor and directly select all            |
+|                  | **_Agstr_**                                          |
+| Leader-tr        | Type and replace (global) 'old/new'                  |
+| Leader-tl        | Type and replace (current line) 'old/new'            |
+| Leader-rl        | Remove some last chacacter                           |
+| Leader-rw        | Remove whitespaces                                   |
+| Leader-sq        | Put sequance number                                  |
+| Leader-ez        | Like changing file type extension                    |
+| Leader-eq        | Like changing file type extension                    |
+|                  | **_Fugitive_**                                       |
+| Ctrl-w           | Gvdiffsplit                                          |
+| Ctrl-q           | Gdiffsplit                                           |
+|                  | **_Misc_**                                           |
+| fFtT             | Use this to navigate (fF == ;,)                      |
+| Ctrl-g           | Codi                                                 |
+| Alt-g            | Codi! (Deactivate Codi)                              |
+| =,-              | increase, decrease number                            |
+| F3, F4           | set number, set relativenumber (toggle)              |
+| F5               | Toggle undotree                                      |
+| F10              | Write (save)                                         |
+| F11              | Toggle wraping text                                  |
+| jk or kj (i)     | Escape from insert mode (in insert mode)             |
+| ---------        | --------------------                                 |
 
 **NOTE for Multiple Cursor**: start with `g<C-n>` to match without boundaries (behaves like `g*` instead of `*`)

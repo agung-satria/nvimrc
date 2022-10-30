@@ -13,6 +13,10 @@ Plug 'dense-analysis/ale'
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
 Plug 'marlonfan/coc-phpls'
 
+" Database-nya
+Plug 'vim-scripts/dbext.vim' " Functions/mappings/commands for Vim to access several databases. 
+Plug 'jsborjesson/vim-uppercase-sql' " Auto UPPERCASE SYNTAX in sql file
+
 " Javascript Dev
 Plug 'pangloss/vim-javascript' "Mostly for concealing characters
 
@@ -46,6 +50,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 
+Plug 'mechatroner/rainbow_csv' " Give different color to each column in csv file
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive' " git wrapper
 Plug 'prettier/vim-prettier'

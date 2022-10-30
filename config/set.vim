@@ -24,7 +24,7 @@ set cindent
 set smartindent
 set cmdheight=1
 set updatetime=300
-set timeoutlen=200
+set timeoutlen=250
 set splitbelow
 set splitright
 set scrolloff=3
@@ -146,7 +146,7 @@ inoremap <F10> <ESC>:w<CR>l
 nnoremap <F10> :w<CR>
 
 " reload nvim
-nnoremap <leader>r :so ~/.config/nvim/init.vim<CR>
+nnoremap <leader>rr :so ~/.config/nvim/init.vim<CR>
 
 " copy paste
 vnoremap <C-c> "+y
@@ -201,4 +201,3 @@ augroup vimrc-remember-cursor-position
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
 "_________________________ my config _______________________________
-

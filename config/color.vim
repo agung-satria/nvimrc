@@ -35,11 +35,14 @@ require('nightfox').setup({
 })
 
 -- setup must be called before loading
-vim.cmd("colorscheme nightfox")
---[[ vim.cmd("colorscheme carbonfox") ]]
---[[ vim.cmd("colorscheme terafox") ]]
---[[ vim.cmd("colorscheme nordfox") ]]
---[[ vim.cmd("colorscheme dawnfox") ]]
---[[ vim.cmd("colorscheme duskfox") ]]
---[[ vim.cmd("colorscheme dayfox") ]]
+vim.cmd("colorscheme nightfox") -- carbonfox, terafox, nordfox, dawnfox, duskfox, dayfox
+vim.cmd("nnoremap <leader>e1 :colorscheme nightfox<CR>") -- default
+vim.cmd("nnoremap <leader>e2 :colorscheme dayfox<CR>")
+vim.cmd("nnoremap <leader>e3 :colorscheme dawnfox<CR>")
+vim.cmd("nnoremap <leader>e4 :colorscheme duskfox<CR>")
+vim.cmd("nnoremap <leader>e5 :colorscheme nordfox<CR>")
+vim.cmd("nnoremap <leader>e6 :colorscheme terafox<CR>")
+vim.cmd("nnoremap <leader>e7 :colorscheme carbonfox<CR>")
+vim.cmd("nnoremap <leader>es :colorscheme<CR>") -- quick check
+
 END
