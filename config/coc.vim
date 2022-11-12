@@ -71,8 +71,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>af  <Plug>(coc-format-selected)
-nmap <leader>af  <Plug>(coc-format-selected)
+xmap <leader>afs  <Plug>(coc-format-selected)
+nmap <leader>afs  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -85,7 +85,7 @@ augroup end
 " Remap keys for applying codeAction to the current buffer.
 nmap <leader>ac  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>af  <Plug>(coc-fix-current)
 
 " Run the Code Lens action on the current line.
 nmap <leader>cl  <Plug>(coc-codelens-action)
