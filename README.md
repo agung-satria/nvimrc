@@ -4,7 +4,7 @@
 
 # Requirement
 
-- sudo pacman -S [nodejs](https://nodejs.org/) npm neovim zenity ripgrep the_silver_searcher
+- sudo pacman -S [nodejs](https://nodejs.org/) npm neovim zenity ripgrep
 - sudo apt-get install zenity ripgrep silversearcher-ag
 - npm install -g live-server js-beautify prettier yarn
 - npm install -g bash-language-server (optoinal, but recommended)
@@ -142,6 +142,8 @@ Map leader = Space
 | Leader-sq    | Put sequance number                                  |
 | Leader-ez    | Like changing file type extension                    |
 | Leader-eq    | Like changing file type extension                    |
+| Leader-tw    | Toggle wraping text                                  |
+| Leader-sa    | Select all                                           |
 |              | **_Fugitive_**                                       |
 | Ctrl-w       | Gvdiffsplit                                          |
 | Ctrl-q       | Gdiffsplit                                           |
@@ -150,6 +152,8 @@ Map leader = Space
 | Ctrl-g       | Codi                                                 |
 | Alt-g        | Codi! (Deactivate Codi)                              |
 | =,-          | increase, decrease number                            |
+| g<c-a>       | sequence number, in vertical highlight of 0          |
+| g= (= : c-a) | sequence number, in vertical highlight of 0          |
 | F3, F4       | set number, set relativenumber (toggle)              |
 | F5           | Toggle undotree                                      |
 | F10          | Write (save)                                         |

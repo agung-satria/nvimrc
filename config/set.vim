@@ -37,6 +37,7 @@ set nocompatible
 syntax on
 
 let mapleader = " "
+nnoremap <leader>; :
 inoremap jk <esc>l
 inoremap kj <esc>
 
@@ -168,10 +169,13 @@ inoremap <F4> <ESC> :set rnu! <CR>i
 :endfunction
 map <F11> :call ToggleWrap()<CR>
 map! <F11> ^[:call ToggleWrap()<CR>
+map <leader>tw :call ToggleWrap()<CR>
+map! <leader>tw ^[:call ToggleWrap()<CR>
 
 " Select all
-nnoremap <C-a> ggVG
-inoremap <C-a> <ESC>ggVG
+noremap <leader>sa ggVG
+" nnoremap <C-a> ggVG
+" inoremap <C-a> <ESC>ggVG
 
 " Split
 noremap <leader>vs :vsplit<CR>
