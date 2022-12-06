@@ -41,6 +41,10 @@ Plug 'lukas-reineke/indent-blankline.nvim' " Indentation line guide
 Plug 'metakirby5/codi.vim'
 " Plug 'karb94/neoscroll.nvim'
 
+" Icon poicker
+Plug 'stevearc/dressing.nvim'
+Plug 'ziontee113/icon-picker.nvim'
+
 Plug 'numToStr/Comment.nvim' " Easily comment stuff
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'rhysd/clever-f.vim' "Use fFtT to navigate

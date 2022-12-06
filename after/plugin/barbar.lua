@@ -6,6 +6,8 @@ map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<A-.>', '<Cmd>BufferNext<CR>', opts)
 map('n', '<S-H>', '<Cmd>BufferPrevious<CR>', opts)
 map('n', '<S-L>', '<Cmd>BufferNext<CR>', opts)
+map('n', '<S-TAB>', '<Cmd>BufferPrevious<CR>', opts)
+map('n', '<TAB>', '<Cmd>BufferNext<CR>', opts)
 -- Re-order to previous/next
 map('n', '<A-<>', '<Cmd>BufferMovePrevious<CR>', opts)
 map('n', '<A->>', '<Cmd>BufferMoveNext<CR>', opts)
