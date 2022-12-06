@@ -169,8 +169,9 @@ inoremap <F4> <ESC> :set rnu! <CR>i
 :endfunction
 map <F11> :call ToggleWrap()<CR>
 map! <F11> ^[:call ToggleWrap()<CR>
-map <leader>tw :call ToggleWrap()<CR>
-map! <leader>tw ^[:call ToggleWrap()<CR>
+" it cuase delay after hitting space in insert mode
+" nnoremap <leader>tw :call ToggleWrap()<CR>
+" nnoremap! <leader>tw ^[:call ToggleWrap()<CR>
 
 " Select all
 noremap <leader>sa ggVG
@@ -197,7 +198,7 @@ noremap <leader>l :set hlsearch<CR>
 " Abbreviations
 abbr emaila agungsatria890@gmail.com
 
-nnoremap <leader>pv :Ex<CR>
+nnoremap <leader>ef :Ex<CR>
 
 " Autocomand to remember last editing position
 augroup vimrc-remember-cursor-position

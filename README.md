@@ -68,12 +68,10 @@ Map leader = Space
 | Leader-m     | Find file NVIM Tree                                  |
 | Leader-sv    | split                                                |
 | Leader-vs    | vsplit                                               |
-| Leader-p     | Prettier                                             |
 | Leader-h     | nohl                                                 |
 | Leader-l     | hlsearch                                             |
 | Leader-w     | Write (save)                                         |
 | Leader-q     | Quit                                                 |
-| Leader-c     | Close current buffers                                |
 | Leader-y     | Copy full path in current buffer                     |
 | Leader-/     | Toggle Comment                                       |
 | Ctrl-/       | Toggle Comment                                       |
@@ -82,11 +80,25 @@ Map leader = Space
 | Ctrl-<arrow> | Resize split                                         |
 |              | **_Navigation_**                                     |
 | Alt-j,k      | Page down, page up                                   |
-| Shift-h      | Previous buffers                                     |
-| Shift-l      | Next buffers                                         |
-| Ctrl-hjkl    | Move focuse split                                    |
+| Ctrl-hjkl    | Move focus split                                     |
 | Alt-j,k (v)  | Move line up and down (in visual mode)               |
 | JK           | Move line up and down (in visual mode)               |
+|              | **_barbar(buffer)_**                                 |
+| Shift-h      | Previous buffers                                     |
+| Shift-l      | Next buffers                                         |
+| Shift-Alt-h  | Buffer move previous                                 |
+| Shift-Alt-l  | Buffer move next                                     |
+| Ctrl-p       | Buffer pick                                          |
+| Leader-p     | Buffer pick                                          |
+| Alt-p        | Buffer pin                                           |
+| Alt-<1-9>    | Buffer go to                                         |
+| Alt-0        | Buffer last                                          |
+| Alt-c        | Close current buffers                                |
+| Leader-c     | Close current buffers                                |
+| Leader-bb    | Buffer oferd by buffer number                        |
+| Leader-bd    | Buffer oferd by buffer directory                     |
+| Leader-bl    | Buffer oferd by buffer language                      |
+| Leader-bw    | Buffer oferd by buffer window number                 |
 |              | **_Coc_**                                            |
 | Ctrl-space   | Trigger completion                                   |
 | Ctrl-<j,k>   | Pum visible next, prev                               |
@@ -106,7 +118,7 @@ Map leader = Space
 |              | **_Telescope_**                                      |
 | Leader-f     | Telescope find_files                                 |
 | Leader-g     | Telescope live_grep                                  |
-| Leader-o     | Telescope buffers                                    |
+| Ctrl-o       | Telescope buffers                                    |
 | C-{x,v,t}    | Telescope open result (hor,ver,tab)                  |
 | C-{u,d}      | Scroll preview result (up, down)                     |
 |              | **_Git Signs_**                                      |
@@ -142,12 +154,12 @@ Map leader = Space
 | Leader-sq    | Put sequance number                                  |
 | Leader-ez    | Like changing file type extension                    |
 | Leader-eq    | Like changing file type extension                    |
-| Leader-tw    | Toggle wraping text                                  |
 | Leader-sa    | Select all                                           |
 |              | **_Fugitive_**                                       |
 | Ctrl-w       | Gvdiffsplit                                          |
 | Ctrl-q       | Gdiffsplit                                           |
 |              | **_Misc_**                                           |
+| :Prettier    | Prettier                                             |
 | fFtT         | Use this to navigate (fF == ;,)                      |
 | Ctrl-g       | Codi                                                 |
 | Alt-g        | Codi! (Deactivate Codi)                              |

@@ -34,7 +34,8 @@ Plug 'navarasu/onedark.nvim'
 
 Plug 'kyazdani42/nvim-tree.lua' " Nvim Tree
 Plug 'kyazdani42/nvim-web-devicons' " File icons
-Plug 'akinsho/bufferline.nvim' " Bufferline
+Plug 'romgrk/barbar.nvim'
+" Plug 'akinsho/bufferline.nvim' " Bufferline
 Plug 'nvim-lualine/lualine.nvim' " Status line
 Plug 'lukas-reineke/indent-blankline.nvim' " Indentation line guide
 Plug 'metakirby5/codi.vim'
