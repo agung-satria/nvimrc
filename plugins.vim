@@ -56,6 +56,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 
+Plug 'mhinz/vim-startify'
 Plug 'mechatroner/rainbow_csv' " Give different color to each column in csv file
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive' " git wrapper

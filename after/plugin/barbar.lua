@@ -84,8 +84,8 @@ require'bufferline'.setup {
   },
 
   -- Excludes buffers from the tabline
-  exclude_ft = {'javascript'},
-  exclude_name = {'package.json'},
+  -- exclude_ft = {'javascript'},
+  -- exclude_name = {'package.json'},
 
   -- Hide inactive buffers and file extensions. Other options are `current` and `visible`
   --[[ hide = {extensions = true, inactive = true}, ]]
