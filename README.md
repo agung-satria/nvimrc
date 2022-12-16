@@ -90,7 +90,7 @@ Map leader = Space
 | Shift-Alt-l     | Buffer move next                                     |
 | Ctrl-p          | Buffer pick                                          |
 | Leader-p        | Buffer pick                                          |
-| Alt-p           | Buffer pin                                           |
+| Alt-Shift-p     | Buffer pin                                           |
 | Alt-<1-9>       | Buffer go to                                         |
 | Alt-0           | Buffer last                                          |
 | Alt-c           | Close current buffers                                |

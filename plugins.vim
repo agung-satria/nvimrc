@@ -24,6 +24,9 @@ Plug 'pangloss/vim-javascript' "Mostly for concealing characters
 Plug 'yaegassy/coc-tailwindcss3' " Intelligent Tailwind CSS tooling for coc.nvim
 Plug 'brenoprata10/nvim-highlight-colors' " Tailwind CSS color highlight
 
+" Yuck for eww widget
+Plug 'elkowar/yuck.vim'
+
 " Color
 Plug 'KabbAmine/vCoolor.vim' " Color picker
 Plug 'norcalli/nvim-colorizer.lua' " Color highlight
@@ -37,6 +40,7 @@ Plug 'kyazdani42/nvim-web-devicons' " File icons
 Plug 'romgrk/barbar.nvim'
 " Plug 'akinsho/bufferline.nvim' " Bufferline
 Plug 'nvim-lualine/lualine.nvim' " Status line
+" Plug 'yorik1984/newpaper.nvim' " Status line theme
 Plug 'lukas-reineke/indent-blankline.nvim' " Indentation line guide
 Plug 'metakirby5/codi.vim'
 " Plug 'karb94/neoscroll.nvim'

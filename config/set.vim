@@ -65,7 +65,7 @@ imap <C-z> <Nop>
 
 " toggle last buffers
 nnoremap <leader><TAB> <C-6>
-nnoremap <leader>c <cmd>bdel<CR>
+" nnoremap <leader>c <cmd>bdel<CR>
 
 " Visual --
 " Stay in indent mode
