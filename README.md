@@ -1,6 +1,7 @@
 # Screenshot
 
-![](images/nvim-tailwindcss-new.png)
+![](images/nvim.png)
+<!-- ![](images/nvim-tailwindcss-new.png) -->
 
 # Requirement
 
@@ -122,9 +123,9 @@ Map leader = Space
 | C-{x,v,t}       | Telescope open result (hor,ver,tab)                  |
 | C-{u,d}         | Scroll preview result (up, down)                     |
 |                 | **_Git Signs_**                                      |
-| Leader-sp       | Git signs preview hunk toggle                        |
-| Leader-sj       | Git signs next hunk                                  |
-| Leader-sk       | Git signs prev hunk                                  |
+| Leader-leader-p | Git signs preview hunk toggle                        |
+| Leader-leader-j | Git signs next hunk                                  |
+| Leader-leader-k | Git signs prev hunk                                  |
 |                 | **_Easy Motion_**                                    |
 | Leader-a        | Target key all words                                 |
 | Leader-j        | Target key line down                                 |
@@ -141,7 +142,7 @@ Map leader = Space
 |                 | **_Emoji Picker_**                                   |
 |                 | _make sure noto-color-emoji-fontconfig installed_    |
 | Leader-leader-y | Icon picker yank                                     |
-| Leader-leader-i | Icon picker normal                                   |
+| Leader-leader-i | Icon picker insert                                   |
 |                 | **_Color_**                                          |
 | Leader-ee       | Colorizer toggle                                     |
 | Leader-ea       | Choose colorscheme                                   |

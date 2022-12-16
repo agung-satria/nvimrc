@@ -46,6 +46,6 @@ gitsigns.setup {
     enable = false,
   },
 }
-vim.keymap.set('n', '<leader>sp', '<Cmd>Gitsigns preview_hunk<CR>', {})
-vim.keymap.set('n', '<leader>sj', '<Cmd>Gitsigns next_hunk<CR>', {})
-vim.keymap.set('n', '<leader>sk', '<Cmd>Gitsigns prev_hunk<CR>', {})
+vim.keymap.set('n', '<leader><leader>p', '<Cmd>Gitsigns preview_hunk<CR>', {})
+vim.keymap.set('n', '<leader><leader>j', '<Cmd>Gitsigns next_hunk<CR>', {})
+vim.keymap.set('n', '<leader><leader>k', '<Cmd>Gitsigns prev_hunk<CR>', {})
