@@ -141,6 +141,8 @@ nnoremap <leader>rl :%s/.\{1}$// <left><left><left><left><left>
 " Quick save
 nnoremap <leader>w :w <CR>h 
 nnoremap <leader>q :q <CR> 
+nnoremap <C-s> :w<CR> 
+inoremap <C-s> <esc>:w<CR>a
 
 " Quick save
 inoremap <F10> <ESC>:w<CR>l

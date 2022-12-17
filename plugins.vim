@@ -34,6 +34,7 @@ Plug 'kien/rainbow_parentheses.vim'
 " Colorscheme
 Plug 'EdenEast/nightfox.nvim'
 Plug 'navarasu/onedark.nvim'
+Plug 'decaycs/decay.nvim', { 'as': 'decay' }
 
 Plug 'kyazdani42/nvim-tree.lua' " Nvim Tree
 Plug 'kyazdani42/nvim-web-devicons' " File icons

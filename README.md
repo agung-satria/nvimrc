@@ -1,6 +1,7 @@
 # Screenshot
 
-![](images/nvim.png)
+![](images/nvim-decay.png)
+<!-- ![](images/nvim.png) -->
 <!-- ![](images/nvim-tailwindcss-new.png) -->
 
 # Requirement
