@@ -14,7 +14,7 @@ if not present then
 end
 
 decay.setup({
-  style = 'normal', -- normal, dark, light, decayce
+  style = 'dark', -- normal, dark, light, decayce
    italics = {
     code = true,
     comments = false -- to disable italic comments, replace to true to enable
